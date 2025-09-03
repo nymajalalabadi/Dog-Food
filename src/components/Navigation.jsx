@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes, FaSun, FaMoon, FaPaw } from 'react-icons/fa';
-import { useDarkMode } from '../contexts/DarkModeContext';
+import { useDarkMode } from '../contexts/useDarkMode';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,24 +25,24 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 glass-card border-b border-white/10 dark:border-black/10">
+    <nav className="fixed top-0 w-full z-50 glass-card glass-shadow border-b border-white/10 dark:border-black/10 animate-fade-in-scale shadow-glow-hover">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <FaPaw className="text-2xl text-blue-500" />
-            <span className="text-xl font-bold text-gray-900 dark:text-white">
+          <Link to="/" className="flex items-center space-x-2 group">
+            <FaPaw className="text-2xl text-blue-500 group-hover:animate-float transition-all duration-300" />
+            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent group-hover:from-pink-600 group-hover:via-purple-600 group-hover:to-blue-600 transition-all duration-500">
               Premium Dog Food
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+          <div className="hidden md:flex items-center space-x-6">
+            {navItems.map((item, index) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`nav-link ${isActivePath(item.path) ? 'active' : ''}`}
+                className={`nav-link animate-fade-in-up animate-stagger-${index + 1} ${isActivePath(item.path) ? 'active animate-pulse-glow' : ''}`}
               >
                 {item.label}
               </Link>
@@ -53,37 +53,44 @@ const Navigation = () => {
           <div className="flex items-center space-x-4">
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-lg glass-button hover:scale-110 transition-transform duration-300"
+              className="p-3 rounded-lg glass-button hover:scale-110 transition-all duration-300 animate-float group relative overflow-hidden"
               aria-label="Toggle dark mode"
             >
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               {isDarkMode ? (
-                <FaSun className="text-yellow-400" />
+                <FaSun className="text-yellow-400 text-lg relative z-10 group-hover:animate-spin" />
               ) : (
-                <FaMoon className="text-gray-600" />
+                <FaMoon className="text-gray-600 text-lg relative z-10 group-hover:text-purple-400 transition-colors duration-300" />
               )}
             </button>
 
             {/* Mobile menu button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden p-2 rounded-lg glass-button"
+              className="md:hidden p-3 rounded-lg glass-button hover:scale-110 transition-all duration-300 group"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <FaTimes /> : <FaBars />}
+              <div className="relative">
+                {isMenuOpen ? (
+                  <FaTimes className="text-lg group-hover:animate-spin transition-transform duration-300" />
+                ) : (
+                  <FaBars className="text-lg group-hover:animate-pulse transition-all duration-300" />
+                )}
+              </div>
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-white/10 dark:border-black/10">
-              {navItems.map((item) => (
+          <div className="md:hidden animate-fade-in-scale">
+            <div className="px-2 pt-2 pb-3 space-y-2 border-t border-white/10 dark:border-black/10 glass-card mx-2 mt-2 rounded-lg">
+              {navItems.map((item, index) => (
                 <Link
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`nav-link ${isActivePath(item.path) ? 'active' : ''}`}
+                  className={`nav-link block animate-fade-in-up animate-stagger-${index + 1} ${isActivePath(item.path) ? 'active animate-pulse-glow' : ''}`}
                 >
                   {item.label}
                 </Link>
