@@ -82,7 +82,7 @@ const Products = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <section className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Our Products
           </h1>
           <p className="text-xl max-w-3xl mx-auto">
@@ -102,7 +102,7 @@ const Products = () => {
                   {product.image === "FaWeightHanging" && <FaWeightHanging className="text-green-500" />}
                   {product.image === "FaLeaf" && <FaLeaf className="text-green-600" />}
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold mb-2 ">
                   {product.name}
                 </h3>
                 <p className="mb-4">
@@ -113,7 +113,7 @@ const Products = () => {
               <div className="flex items-center justify-center mb-4">
                 <div className="flex items-center">
                   <FaStar className="text-yellow-400 mr-1" />
-                  <span className="text-gray-700 dark:text-gray-300 font-medium">
+                  <span className=" font-medium">
                     {product.rating}
                   </span>
                   <span className="text-gray-500 dark:text-gray-400 ml-1">
@@ -124,7 +124,7 @@ const Products = () => {
 
               <div className="mb-4">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                  <span className="text-2xl font-bold ">
                     {product.price}
                   </span>
                   <span>
@@ -134,7 +134,7 @@ const Products = () => {
               </div>
 
               <div className="mb-6">
-                <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">Key Features:</h4>
+                <h4 className="font-semibold mb-2 ">Key Features:</h4>
                 <ul className="space-y-1">
                   {product.features.map((feature, index) => (
                     <li key={index} className="flex items-center text-sm">
@@ -164,7 +164,7 @@ const Products = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <FaBone className="text-4xl text-orange-500 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-3 ">
                 Natural Ingredients
               </h3>
               <p>
@@ -173,7 +173,7 @@ const Products = () => {
             </div>
             <div className="text-center">
               <FaLeaf className="text-4xl text-green-500 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-3 ">
                 Vet Formulated
               </h3>
               <p>
@@ -182,7 +182,7 @@ const Products = () => {
             </div>
             <div className="text-center">
               <FaStar className="text-4xl text-yellow-500 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-3 ">
                 Premium Quality
               </h3>
               <p>

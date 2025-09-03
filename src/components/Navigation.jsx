@@ -60,7 +60,7 @@ const Navigation = () => {
               {isDarkMode ? (
                 <FaSun className="text-yellow-400 text-lg relative z-10 group-hover:animate-spin" />
               ) : (
-                <FaMoon className="text-gray-600 text-lg relative z-10 group-hover:text-purple-400 transition-colors duration-300" />
+                <FaMoon className=" text-lg relative z-10 group-hover:text-purple-400 transition-colors duration-300" />
               )}
             </button>
 

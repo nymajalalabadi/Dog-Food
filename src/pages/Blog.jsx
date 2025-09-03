@@ -71,7 +71,7 @@ const Blog = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <section className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Dog Nutrition Blog
           </h1>
           <p className="text-xl  max-w-3xl mx-auto">
@@ -120,7 +120,7 @@ const Blog = () => {
                     {blogPosts[0].readTime}
                   </span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 ">
                   {blogPosts[0].title}
                 </h2>
                 <p className="text-lg  mb-6">
@@ -176,7 +176,7 @@ const Blog = () => {
                 </span>
               </div>
 
-              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white line-clamp-2">
+              <h3 className="text-xl font-semibold mb-3  line-clamp-2">
                 {post.title}
               </h3>
 
@@ -194,7 +194,7 @@ const Blog = () => {
 
         {/* Newsletter Signup */}
         <section className="glass-card p-12 rounded-2xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 ">
             Stay Updated
           </h2>
           <p className="text-lg  mb-8 max-w-2xl mx-auto">

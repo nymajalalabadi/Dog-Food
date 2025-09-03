@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <section className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Contact Us
           </h1>
           <p className="text-xl max-w-3xl mx-auto">
@@ -51,7 +51,7 @@ const Contact = () => {
                 <div className="flex items-center">
                   <FaPhone className="text-2xl text-blue-500 mr-4" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Phone</h3>
+                    <h3 className="text-lg font-semibold ">Phone</h3>
                     <p>+1 (555) 123-4567</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Mon-Fri 9AM-6PM EST</p>
                   </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                 <div className="flex items-center">
                   <FaEnvelope className="text-2xl text-green-500 mr-4" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
+                    <h3 className="text-lg font-semibold ">Email</h3>
                     <p>support@premiumdogfood.com</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">We respond within 24 hours</p>
                   </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                 <div className="flex items-center">
                   <FaMapMarkerAlt className="text-2xl text-red-500 mr-4" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Address</h3>
+                    <h3 className="text-lg font-semibold ">Address</h3>
                     <p>
                       123 Pet Nutrition Way<br />
                       Dog Food City, DF 12345<br />
@@ -87,7 +87,7 @@ const Contact = () => {
                 <div className="flex items-center">
                   <FaClock className="text-2xl text-purple-500 mr-4" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Business Hours</h3>
+                    <h3 className="text-lg font-semibold ">Business Hours</h3>
                     <div className="space-y-1">
                       <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                       <p>Saturday: 10:00 AM - 4:00 PM</p>
@@ -101,14 +101,14 @@ const Contact = () => {
 
           {/* Contact Form */}
           <section>
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
+            <h2 className="text-3xl font-bold mb-8 ">
               Send us a Message
             </h2>
 
             <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl">
               <div className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 ">
                     Full Name
                   </label>
                   <input
@@ -124,7 +124,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+                  <label htmlFor="email" className="block text-sm font-medium mb-2 ">
                     Email Address
                   </label>
                   <input
@@ -140,7 +140,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+                  <label htmlFor="subject" className="block text-sm font-medium mb-2 ">
                     Subject
                   </label>
                   <input
@@ -156,7 +156,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+                  <label htmlFor="message" className="block text-sm font-medium mb-2 ">
                     Message
                   </label>
                   <textarea
@@ -185,12 +185,12 @@ const Contact = () => {
 
         {/* FAQ Section */}
         <section className="mt-20">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+          <h2 className="text-3xl font-bold text-center mb-12 ">
             Frequently Asked Questions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="glass-card p-6 rounded-xl">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold mb-3 ">
                 How do I choose the right food for my dog?
               </h3>
               <p className="">
@@ -199,7 +199,7 @@ const Contact = () => {
               </p>
             </div>
             <div className="glass-card p-6 rounded-xl">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold mb-3 ">
                 Do you offer free shipping?
               </h3>
               <p className="">
@@ -208,7 +208,7 @@ const Contact = () => {
               </p>
             </div>
             <div className="glass-card p-6 rounded-xl">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold mb-3 ">
                 What's your return policy?
               </h3>
               <p className="">
@@ -217,7 +217,7 @@ const Contact = () => {
               </p>
             </div>
             <div className="glass-card p-6 rounded-xl">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold mb-3 ">
                 Are your products vet recommended?
               </h3>
               <p className="">

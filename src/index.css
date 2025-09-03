@@ -144,14 +144,22 @@
   }
 
   /* Heading styles for better readability in light mode */
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
+    color: rgb(0, 0, 0) !important; /* Pure black for h1 in light mode */
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+  }
+
+  h2, h3, h4, h5, h6 {
     color: rgb(var(--color-secondary-900)) !important; /* High contrast dark text in light mode */
     font-weight: 600 !important;
     line-height: 1.2 !important;
   }
 
-  .dark-mode h1,
-  .dark-mode h2,
+  .dark-mode h1 {
+    color: rgb(255, 255, 255) !important; /* Pure white for h1 in dark mode */
+  }
+
   .dark-mode h3,
   .dark-mode h4,
   .dark-mode h5,
@@ -166,30 +174,30 @@
   }
 
   .dark-mode h2 {
-    color: rgb(var(--color-secondary-50)) !important;
+    color: rgb(255, 255, 255) !important; /* Pure white for h2 in dark mode */
   }
 
   /* Override for p tags to make them black in light mode */
   p {
-    color: rgb(var(--color-secondary-900)) !important;
+    color: rgb(0, 0, 0) !important; /* Pure black for p in light mode */
     font-weight: 400 !important;
     line-height: 1.6 !important;
   }
 
   .dark-mode p {
-    color: rgb(var(--color-secondary-300)) !important;
+    color: rgb(255, 255, 255) !important; /* Pure white for p in dark mode */
   }
 
   /* Override for ul and li tags to make them black in light mode */
   ul, li {
-    color: rgb(var(--color-secondary-900)) !important;
+    color: rgb(0, 0, 0) !important; /* Pure black for ul and li in light mode */
     font-weight: 400 !important;
     line-height: 1.6 !important;
   }
 
   .dark-mode ul,
   .dark-mode li {
-    color: rgb(var(--color-secondary-300)) !important;
+    color: rgb(255, 255, 255) !important; /* Pure white for ul and li in dark mode */
   }
 }
 
