@@ -33,7 +33,7 @@ const Contact = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
             Contact Us
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto">
             Have questions about our dog food or need help choosing the right formula?
             We're here to help! Reach out to us anytime.
           </p>
@@ -52,7 +52,7 @@ const Contact = () => {
                   <FaPhone className="text-2xl text-blue-500 mr-4" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
+                    <p>+1 (555) 123-4567</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Mon-Fri 9AM-6PM EST</p>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ const Contact = () => {
                   <FaEnvelope className="text-2xl text-green-500 mr-4" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-300">support@premiumdogfood.com</p>
+                    <p>support@premiumdogfood.com</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">We respond within 24 hours</p>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                   <FaMapMarkerAlt className="text-2xl text-red-500 mr-4" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Address</h3>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p>
                       123 Pet Nutrition Way<br />
                       Dog Food City, DF 12345<br />
                       United States
@@ -88,7 +88,7 @@ const Contact = () => {
                   <FaClock className="text-2xl text-purple-500 mr-4" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Business Hours</h3>
-                    <div className="text-gray-600 dark:text-gray-300 space-y-1">
+                    <div className="space-y-1">
                       <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                       <p>Saturday: 10:00 AM - 4:00 PM</p>
                       <p>Sunday: Closed</p>
@@ -193,7 +193,7 @@ const Contact = () => {
               <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
                 How do I choose the right food for my dog?
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="">
                 Contact our nutrition experts! We'll help you choose based on your dog's age,
                 breed, size, and any specific health needs.
               </p>
@@ -202,7 +202,7 @@ const Contact = () => {
               <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
                 Do you offer free shipping?
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="">
                 Yes! We offer free shipping on orders over $50. Standard shipping is available
                 for smaller orders with affordable rates.
               </p>
@@ -211,7 +211,7 @@ const Contact = () => {
               <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
                 What's your return policy?
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="">
                 We offer a 30-day satisfaction guarantee. If your dog doesn't love our food,
                 we'll refund your purchase or exchange it.
               </p>
@@ -220,7 +220,7 @@ const Contact = () => {
               <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
                 Are your products vet recommended?
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="">
                 Absolutely! Our formulas are developed with input from veterinary nutritionists
                 and are recommended by vets nationwide.
               </p>

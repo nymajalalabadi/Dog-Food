@@ -74,7 +74,7 @@ const Blog = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
             Dog Nutrition Blog
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl  max-w-3xl mx-auto">
             Stay informed with expert advice on dog nutrition, health tips, and the latest
             research in pet food science. Your dog's health starts with knowledge.
           </p>
@@ -123,7 +123,7 @@ const Blog = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
                   {blogPosts[0].title}
                 </h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                <p className="text-lg  mb-6">
                   {blogPosts[0].excerpt}
                 </p>
                 <button className="glass-button px-6 py-3 rounded-xl font-semibold flex items-center hover:scale-105 transition-transform duration-300">
@@ -180,7 +180,7 @@ const Blog = () => {
                 {post.title}
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+              <p className=" mb-4 line-clamp-3">
                 {post.excerpt}
               </p>
 
@@ -197,7 +197,7 @@ const Blog = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             Stay Updated
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg  mb-8 max-w-2xl mx-auto">
             Subscribe to our newsletter for the latest dog nutrition tips, health advice,
             and exclusive offers delivered to your inbox.
           </p>

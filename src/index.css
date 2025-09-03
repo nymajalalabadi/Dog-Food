@@ -179,6 +179,18 @@
   .dark-mode p {
     color: rgb(var(--color-secondary-300)) !important;
   }
+
+  /* Override for ul and li tags to make them black in light mode */
+  ul, li {
+    color: rgb(var(--color-secondary-900)) !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+  }
+
+  .dark-mode ul,
+  .dark-mode li {
+    color: rgb(var(--color-secondary-300)) !important;
+  }
 }
 
 /* Beautiful animations and keyframes */

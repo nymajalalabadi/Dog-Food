@@ -85,7 +85,7 @@ const Products = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
             Our Products
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto">
             Discover our range of premium dog food formulas, each carefully crafted to meet
             your dog's specific nutritional needs and preferences.
           </p>
@@ -105,7 +105,7 @@ const Products = () => {
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
                   {product.name}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="mb-4">
                   {product.description}
                 </p>
               </div>
@@ -127,7 +127,7 @@ const Products = () => {
                   <span className="text-2xl font-bold text-gray-900 dark:text-white">
                     {product.price}
                   </span>
-                  <span className="text-gray-600 dark:text-gray-300">
+                  <span>
                     {product.weight}
                   </span>
                 </div>
@@ -137,7 +137,7 @@ const Products = () => {
                 <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">Key Features:</h4>
                 <ul className="space-y-1">
                   {product.features.map((feature, index) => (
-                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-300">
+                    <li key={index} className="flex items-center text-sm">
                       <FaLeaf className="text-green-500 mr-2 text-xs" />
                       {feature}
                     </li>
@@ -167,7 +167,7 @@ const Products = () => {
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
                 Natural Ingredients
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p>
                 We use only the highest quality, natural ingredients in all our formulas
               </p>
             </div>
@@ -176,7 +176,7 @@ const Products = () => {
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
                 Vet Formulated
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p>
                 All our products are developed with input from veterinary nutritionists
               </p>
             </div>
@@ -185,7 +185,7 @@ const Products = () => {
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
                 Premium Quality
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p>
                 Rigorous quality control ensures every batch meets our high standards
               </p>
             </div>
