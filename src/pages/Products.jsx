@@ -1,4 +1,4 @@
-import { FaShoppingCart, FaStar, FaLeaf, FaBone, FaDog, FaFish, FaWeightHanging } from 'react-icons/fa';
+import { FaStar, FaLeaf, FaBone, FaDog, FaFish, FaWeightHanging } from 'react-icons/fa';
 
 const Products = () => {
   const products = [
@@ -70,12 +70,7 @@ const Products = () => {
     }
   ];
 
-  const handleAddToCart = (productName) => {
-    // Using react-hot-toast for notifications
-    import('react-hot-toast').then(({ toast }) => {
-      toast.success(`${productName} added to cart!`);
-    });
-  };
+
 
   return (
     <div className="w-full py-20 px-4">
@@ -145,13 +140,7 @@ const Products = () => {
                 </ul>
               </div>
 
-              <button
-                onClick={() => handleAddToCart(product.name)}
-                className="w-full glass-button py-3 rounded-xl font-semibold flex items-center justify-center"
-              >
-                <FaShoppingCart className="mr-2" />
-                Add to Cart
-              </button>
+
             </div>
           ))}
         </section>
