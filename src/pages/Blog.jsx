@@ -106,7 +106,7 @@ const Blog = () => {
                   {blogPosts[0].image === "FaSpa" && <FaSpa className="text-yellow-500" />}
                   {blogPosts[0].image === "FaDog" && <FaDog className="text-orange-500" />}
                 </div>
-                <div className="flex items-center gap-4 mb-4 text-sm text-gray-500 dark:text-gray-400">
+                <div className="flex items-center gap-4 mb-4 text-sm ">
                   <span className="flex items-center">
                     <FaUser className="mr-1" />
                     {blogPosts[0].author}
@@ -161,7 +161,7 @@ const Blog = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 mb-4 text-xs text-gray-500 dark:text-gray-400">
+              <div className="flex items-center gap-3 mb-4 text-xs ">
                 <span className="flex items-center">
                   <FaUser className="mr-1" />
                   {post.author}

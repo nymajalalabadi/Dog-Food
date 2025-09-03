@@ -29,7 +29,7 @@ const Layout = () => {
             <div className="md:col-span-2 animate-fade-in-scale animate-stagger-1">
               <div className="flex items-center space-x-2 mb-4">
                 <FaPaw className="text-2xl text-blue-600 animate-float" />
-                <span className="text-xl font-bold text-gray-800 dark:text-white">
+                <span className="text-xl font-bold text-gray-800">
                   Premium Dog Food
                 </span>
               </div>
@@ -51,7 +51,7 @@ const Layout = () => {
             </div>
 
             <div className="animate-fade-in-up animate-stagger-2">
-              <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">
+              <h3 className="text-lg font-semibold mb-4 text-gray-800">
                 Quick Links
               </h3>
               <ul className="space-y-2">
@@ -64,7 +64,7 @@ const Layout = () => {
             </div>
 
             <div className="animate-fade-in-up animate-stagger-3">
-              <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">
+              <h3 className="text-lg font-semibold mb-4 text-gray-800">
                 Contact Info
               </h3>
               <div className="space-y-3">

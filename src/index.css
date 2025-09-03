@@ -199,6 +199,16 @@
   .dark-mode li {
     color: rgb(255, 255, 255) !important; /* Pure white for ul and li in dark mode */
   }
+
+  /* Override for span tags to make them black in light mode */
+  span {
+    color: rgb(0, 0, 0) !important; /* Pure black for span in light mode */
+    font-weight: 400 !important;
+  }
+
+  .dark-mode span {
+    color: rgb(255, 255, 255) !important; /* Pure white for span in dark mode */
+  }
 }
 
 /* Beautiful animations and keyframes */

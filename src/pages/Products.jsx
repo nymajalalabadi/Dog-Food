@@ -116,7 +116,7 @@ const Products = () => {
                   <span className=" font-medium">
                     {product.rating}
                   </span>
-                  <span className="text-gray-500 dark:text-gray-400 ml-1">
+                  <span className=" ml-1">
                     ({product.reviews} reviews)
                   </span>
                 </div>

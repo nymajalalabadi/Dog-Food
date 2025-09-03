@@ -53,7 +53,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold ">Phone</h3>
                     <p>+1 (555) 123-4567</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Mon-Fri 9AM-6PM EST</p>
+                    <p className="text-sm ">Mon-Fri 9AM-6PM EST</p>
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold ">Email</h3>
                     <p>support@premiumdogfood.com</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">We respond within 24 hours</p>
+                    <p className="text-sm ">We respond within 24 hours</p>
                   </div>
                 </div>
               </div>

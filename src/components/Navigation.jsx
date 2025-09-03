@@ -31,7 +31,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <FaPaw className="text-2xl text-blue-500 group-hover:animate-float transition-all duration-300" />
-            <span className="text-xl font-bold text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-all duration-300">
+            <span className="text-xl font-bold text-gray-800 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-all duration-300">
               Premium Dog Food
             </span>
           </Link>
