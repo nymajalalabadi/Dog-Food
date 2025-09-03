@@ -53,30 +53,27 @@ const Navigation = () => {
           <div className="flex items-center space-x-4">
             <button
               onClick={toggleDarkMode}
-              className="p-3 rounded-lg glass-button hover:scale-110 transition-all duration-300 animate-float group relative overflow-hidden"
+              className="p-3 rounded-lg glass-button"
               aria-label="Toggle dark mode"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               {isDarkMode ? (
-                <FaSun className="text-yellow-400 text-lg relative z-10 group-hover:animate-spin" />
+                <FaSun className="text-yellow-400 text-lg" />
               ) : (
-                <FaMoon className=" text-lg relative z-10 group-hover:text-purple-400 transition-colors duration-300" />
+                <FaMoon className="text-lg" />
               )}
             </button>
 
             {/* Mobile menu button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden p-3 rounded-lg glass-button hover:scale-110 transition-all duration-300 group"
+              className="md:hidden p-3 rounded-lg glass-button"
               aria-label="Toggle menu"
             >
-              <div className="relative">
-                {isMenuOpen ? (
-                  <FaTimes className="text-lg group-hover:animate-spin transition-transform duration-300" />
-                ) : (
-                  <FaBars className="text-lg group-hover:animate-pulse transition-all duration-300" />
-                )}
-              </div>
+              {isMenuOpen ? (
+                <FaTimes className="text-lg" />
+              ) : (
+                <FaBars className="text-lg" />
+              )}
             </button>
           </div>
         </div>
