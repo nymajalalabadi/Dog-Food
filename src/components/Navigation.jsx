@@ -79,12 +79,12 @@ const Navigation = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 border-t border-white/10 dark:border-black/10">
               {navItems.map((item) => (
-                              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setIsMenuOpen(false)}
-                className={`nav-link ${isActivePath(item.path) ? 'active' : ''}`}
-              >
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`nav-link ${isActivePath(item.path) ? 'active' : ''}`}
+                >
                   {item.label}
                 </Link>
               ))}
