@@ -2,10 +2,9 @@ import { FaPaw, FaHeart, FaShieldAlt, FaStar } from 'react-icons/fa';
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
+    <div className="w-full relative z-20">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20 dark:from-blue-900/30 dark:to-purple-900/30"></div>
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
             Premium Dog Food

@@ -1,4 +1,4 @@
-import { FaCalendar, FaUser, FaClock, FaArrowRight } from 'react-icons/fa';
+import { FaCalendar, FaUser, FaClock, FaArrowRight, FaUtensils, FaList, FaLeaf, FaSpa, FaDog } from 'react-icons/fa';
 
 const Blog = () => {
   const blogPosts = [
@@ -10,7 +10,7 @@ const Blog = () => {
       date: "December 15, 2024",
       readTime: "5 min read",
       category: "Nutrition",
-      image: "🥩"
+      image: "FaUtensils"
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Blog = () => {
       date: "December 12, 2024",
       readTime: "7 min read",
       category: "Education",
-      image: "📋"
+      image: "FaList"
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const Blog = () => {
       date: "December 10, 2024",
       readTime: "6 min read",
       category: "Health",
-      image: "🌸"
+      image: "FaLeaf"
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const Blog = () => {
       date: "December 8, 2024",
       readTime: "4 min read",
       category: "Nutrition",
-      image: "🌾"
+      image: "FaSpa"
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ const Blog = () => {
       date: "December 5, 2024",
       readTime: "8 min read",
       category: "Puppies",
-      image: "🐕‍🦺"
+      image: "FaDog"
     },
     {
       id: 6,
@@ -60,14 +60,14 @@ const Blog = () => {
       date: "December 3, 2024",
       readTime: "6 min read",
       category: "Health",
-      image: "👴"
+      image: "FaDog"
     }
   ];
 
   const categories = ["All", "Nutrition", "Health", "Education", "Puppies"];
 
   return (
-    <div className="min-h-screen py-20 px-4">
+    <div className="w-full py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <section className="text-center mb-16">
@@ -99,7 +99,13 @@ const Blog = () => {
           <div className="glass-card p-8 md:p-12 rounded-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="text-6xl mb-6">{blogPosts[0].image}</div>
+                <div className="text-6xl mb-6 flex justify-center">
+                  {blogPosts[0].image === "FaUtensils" && <FaUtensils className="text-red-500" />}
+                  {blogPosts[0].image === "FaList" && <FaList className="text-blue-500" />}
+                  {blogPosts[0].image === "FaLeaf" && <FaLeaf className="text-green-500" />}
+                  {blogPosts[0].image === "FaSpa" && <FaSpa className="text-yellow-500" />}
+                  {blogPosts[0].image === "FaDog" && <FaDog className="text-orange-500" />}
+                </div>
                 <div className="flex items-center gap-4 mb-4 text-sm text-gray-500 dark:text-gray-400">
                   <span className="flex items-center">
                     <FaUser className="mr-1" />
@@ -126,7 +132,13 @@ const Blog = () => {
                 </button>
               </div>
               <div className="text-center">
-                <div className="text-8xl opacity-50">{blogPosts[0].image}</div>
+                <div className="text-8xl opacity-50 flex justify-center">
+                  {blogPosts[0].image === "FaUtensils" && <FaUtensils className="text-red-500" />}
+                  {blogPosts[0].image === "FaList" && <FaList className="text-blue-500" />}
+                  {blogPosts[0].image === "FaLeaf" && <FaLeaf className="text-green-500" />}
+                  {blogPosts[0].image === "FaSpa" && <FaSpa className="text-yellow-500" />}
+                  {blogPosts[0].image === "FaDog" && <FaDog className="text-orange-500" />}
+                </div>
               </div>
             </div>
           </div>
@@ -137,7 +149,13 @@ const Blog = () => {
           {blogPosts.slice(1).map((post) => (
             <div key={post.id} className="glass-card p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
               <div className="text-center mb-4">
-                <div className="text-5xl mb-4">{post.image}</div>
+                <div className="text-5xl mb-4 flex justify-center">
+                  {post.image === "FaUtensils" && <FaUtensils className="text-red-500" />}
+                  {post.image === "FaList" && <FaList className="text-blue-500" />}
+                  {post.image === "FaLeaf" && <FaLeaf className="text-green-500" />}
+                  {post.image === "FaSpa" && <FaSpa className="text-yellow-500" />}
+                  {post.image === "FaDog" && <FaDog className="text-orange-500" />}
+                </div>
                 <div className="inline-block glass-card px-3 py-1 rounded-full text-sm font-medium mb-4">
                   {post.category}
                 </div>

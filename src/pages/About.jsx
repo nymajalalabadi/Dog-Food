@@ -2,7 +2,7 @@ import { FaAward, FaUsers, FaLeaf, FaHandshake } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <div className="min-h-screen py-20 px-4">
+    <div className="w-full py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <section className="text-center mb-20">

@@ -1,4 +1,4 @@
-import { FaShoppingCart, FaStar, FaLeaf, FaBone } from 'react-icons/fa';
+import { FaShoppingCart, FaStar, FaLeaf, FaBone, FaDog, FaFish, FaWeightHanging } from 'react-icons/fa';
 
 const Products = () => {
   const products = [
@@ -9,7 +9,7 @@ const Products = () => {
       price: "$49.99",
       weight: "15 lbs",
       features: ["High-quality protein", "Grain-free formula", "Vet recommended"],
-      image: "🐕",
+      image: "FaDog",
       rating: 4.8,
       reviews: 124
     },
@@ -20,7 +20,7 @@ const Products = () => {
       price: "$54.99",
       weight: "12 lbs",
       features: ["Supports bone growth", "DHA for brain development", "Easy to digest"],
-      image: "🐶",
+      image: "FaDog",
       rating: 4.9,
       reviews: 89
     },
@@ -31,7 +31,7 @@ const Products = () => {
       price: "$52.99",
       weight: "14 lbs",
       features: ["Joint health support", "Lower calorie formula", "Antioxidant rich"],
-      image: "🦮",
+      image: "FaDog",
       rating: 4.7,
       reviews: 156
     },
@@ -42,7 +42,7 @@ const Products = () => {
       price: "$56.99",
       weight: "15 lbs",
       features: ["Hypoallergenic", "Omega-3 rich", "Digestive health"],
-      image: "🐟",
+      image: "FaFish",
       rating: 4.6,
       reviews: 98
     },
@@ -53,7 +53,7 @@ const Products = () => {
       price: "$48.99",
       weight: "13 lbs",
       features: ["Low calorie", "High fiber content", "Protein rich"],
-      image: "⚖️",
+      image: "FaWeightHanging",
       rating: 4.5,
       reviews: 67
     },
@@ -64,7 +64,7 @@ const Products = () => {
       price: "$59.99",
       weight: "16 lbs",
       features: ["USDA Organic", "Superfood blend", "Natural antioxidants"],
-      image: "🌱",
+      image: "FaLeaf",
       rating: 4.8,
       reviews: 203
     }
@@ -78,7 +78,7 @@ const Products = () => {
   };
 
   return (
-    <div className="min-h-screen py-20 px-4">
+    <div className="w-full py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <section className="text-center mb-16">
@@ -96,7 +96,12 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="glass-card p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
               <div className="text-center mb-4">
-                <div className="text-6xl mb-4">{product.image}</div>
+                <div className="text-6xl mb-4 flex justify-center">
+                  {product.image === "FaDog" && <FaDog className="text-blue-500" />}
+                  {product.image === "FaFish" && <FaFish className="text-orange-500" />}
+                  {product.image === "FaWeightHanging" && <FaWeightHanging className="text-green-500" />}
+                  {product.image === "FaLeaf" && <FaLeaf className="text-green-600" />}
+                </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
                   {product.name}
                 </h3>

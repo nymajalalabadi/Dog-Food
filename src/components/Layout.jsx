@@ -1,21 +1,24 @@
 import { Outlet } from 'react-router-dom';
+import { FaPaw, FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Navigation from './Navigation';
 
 const Layout = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-black">
+    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-black flex flex-col">
       <Navigation />
-      <main className="pt-16">
-        <Outlet />
+      <main className="pt-16 flex-grow px-4 py-8 relative z-10">
+        <div className="w-full max-w-7xl mx-auto">
+          <Outlet />
+        </div>
       </main>
 
       {/* Footer */}
-      <footer className="glass-card border-t border-white/10 dark:border-black/10 mt-20">
+      <footer className="glass-card border-t border-white/10 dark:border-black/10 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="text-2xl">🐕</div>
+                <FaPaw className="text-2xl text-blue-500" />
                 <span className="text-xl font-bold text-gray-900 dark:text-white">
                   Premium Dog Food
                 </span>
@@ -26,13 +29,13 @@ const Layout = () => {
               </p>
               <div className="flex space-x-4">
                 <div className="w-10 h-10 glass-button rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  📘
+                  <FaFacebook className="text-blue-600" />
                 </div>
                 <div className="w-10 h-10 glass-button rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  📷
+                  <FaInstagram className="text-pink-500" />
                 </div>
                 <div className="w-10 h-10 glass-button rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  🐦
+                  <FaTwitter className="text-blue-400" />
                 </div>
               </div>
             </div>
@@ -55,9 +58,9 @@ const Layout = () => {
                 Contact Info
               </h3>
               <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                <p>📞 +1 (555) 123-4567</p>
-                <p>✉️ support@premiumdogfood.com</p>
-                <p>📍 123 Pet Nutrition Way<br />Dog Food City, DF 12345</p>
+                <p><FaPhone className="inline mr-2 text-blue-500" />+1 (555) 123-4567</p>
+                <p><FaEnvelope className="inline mr-2 text-green-500" />support@premiumdogfood.com</p>
+                <p><FaMapMarkerAlt className="inline mr-2 text-red-500" />123 Pet Nutrition Way<br />Dog Food City, DF 12345</p>
               </div>
             </div>
           </div>

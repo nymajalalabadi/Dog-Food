@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen py-20 px-4">
+    <div className="w-full py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <section className="text-center mb-16">
