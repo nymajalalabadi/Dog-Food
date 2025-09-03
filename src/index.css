@@ -4,59 +4,57 @@
   :root {
     &,
     &.light-mode {
-      /* Light Mode Colors */
+      /* Light Mode Colors - Clean and Professional */
       --background-app-rgb: 255, 255, 255;
       --background-gradient-start: 255, 255, 255;
-      --background-gradient-middle: 248, 250, 252;
-      --background-gradient-end: 241, 245, 249;
+      --background-gradient-middle: 249, 250, 251;
+      --background-gradient-end: 243, 244, 246;
 
-      /* Primary Colors - Blue Theme */
-      --color-primary-900: 37, 99, 235;
-      --color-primary-800: 59, 130, 246;
-      --color-primary-700: 79, 172, 254;
-      --color-primary-600: 96, 165, 250;
-      --color-primary-500: 147, 197, 253;
-      --color-primary-400: 165, 180, 252;
-      --color-primary-300: 196, 181, 253;
+      /* Primary Colors - Professional Blue */
+      --color-primary-900: 30, 58, 138;
+      --color-primary-800: 30, 64, 175;
+      --color-primary-700: 29, 78, 216;
+      --color-primary-600: 37, 99, 235;
+      --color-primary-500: 59, 130, 246;
+      --color-primary-400: 96, 165, 250;
+      --color-primary-300: 147, 197, 253;
       --color-primary-200: 219, 234, 254;
       --color-primary-100: 235, 245, 255;
       --color-primary-50: 240, 249, 255;
 
-      /* Secondary Colors - Modern Gray */
-      --color-secondary-900: 15, 23, 42;
-      --color-secondary-800: 30, 41, 59;
-      --color-secondary-700: 51, 65, 85;
-      --color-secondary-600: 71, 85, 105;
-      --color-secondary-500: 100, 116, 139;
-      --color-secondary-400: 148, 163, 184;
-      --color-secondary-300: 203, 213, 224;
-      --color-secondary-200: 226, 232, 240;
-      --color-secondary-100: 241, 245, 249;
-      --color-secondary-50: 248, 250, 252;
-      --color-secondary-0: 255, 255, 255;
+      /* Secondary Colors - High Contrast Gray */
+      --color-secondary-900: 0, 0, 0;  /* Pure black for text */
+      --color-secondary-800: 31, 41, 55;  /* Dark for headings */
+      --color-secondary-700: 55, 65, 81;  /* Medium dark for subtext */
+      --color-secondary-600: 75, 85, 99;  /* Medium for body text */
+      --color-secondary-500: 107, 114, 128; /* Light medium */
+      --color-secondary-400: 156, 163, 175; /* Light for muted text */
+      --color-secondary-300: 209, 213, 219; /* Very light for borders */
+      --color-secondary-200: 229, 231, 235; /* Light borders */
+      --color-secondary-100: 243, 244, 246; /* Light backgrounds */
+      --color-secondary-50: 249, 250, 251;  /* Very light backgrounds */
+      --color-secondary-0: 255, 255, 255;  /* Pure white */
 
-      /* Accent Colors */
+      /* Accent Colors - Minimal and Clean */
       --color-success: 34, 197, 94;
       --color-warning: 245, 158, 11;
       --color-error: 239, 68, 68;
       --color-red-500: 239, 68, 68;
       --color-red-300: 252, 165, 165;
 
-      /* Glassmorphism Effects - Light Mode */
+      /* Glassmorphism Effects - Light Mode - Clean */
       --backdrop-color: 255, 255, 255;
       --glass-bg-color: 255, 255, 255;
-      --glass-bg-opacity: 0.1;
-      --glass-text-color: 15, 23, 42;
-      --glass-border-color: 226, 232, 240;
-      --glass-border-opacity: 0.8;
+      --glass-bg-opacity: 0.15;
+      --glass-text-color: 17, 24, 39;  /* High contrast text */
+      --glass-border-color: 209, 213, 219;
+      --glass-border-opacity: 0.6;
       --glass-shadow-color: 0, 0, 0;
-      --glass-shadow-opacity: 0.1;
+      --glass-shadow-opacity: 0.08;
 
-      /* Additional Beautiful Colors */
-      --color-accent-purple: 147, 51, 234;
-      --color-accent-pink: 236, 72, 153;
-      --color-accent-cyan: 6, 182, 212;
-      --color-accent-emerald: 16, 185, 129;
+      /* Minimal Accent Colors */
+      --color-accent-main: 59, 130, 246;  /* Clean blue */
+      --color-accent-secondary: 16, 185, 129; /* Clean green */
     }
 
     &.dark-mode {
@@ -125,24 +123,61 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    /* Beautiful gradient background */
+    /* Clean and elegant background */
     background: linear-gradient(
-      135deg,
+      145deg,
       rgb(var(--background-gradient-start)) 0%,
-      rgb(var(--background-gradient-middle)) 50%,
+      rgb(var(--background-gradient-middle)) 70%,
       rgb(var(--background-gradient-end)) 100%
     );
     background-attachment: fixed;
     min-height: 100vh;
 
-    color: rgb(var(--color-secondary-900));
+    color: rgb(var(--color-secondary-900)); /* High contrast text */
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* Add subtle texture */
+    /* Subtle elegant texture - minimal */
     background-image:
-      linear-gradient(135deg, rgb(var(--background-gradient-start)) 0%, rgb(var(--background-gradient-middle)) 50%, rgb(var(--background-gradient-end)) 100%),
-      radial-gradient(circle at 25% 25%, rgba(var(--color-primary-100), 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(var(--color-accent-purple), 0.05) 0%, transparent 50%);
+      linear-gradient(145deg, rgb(var(--background-gradient-start)) 0%, rgb(var(--background-gradient-middle)) 70%, rgb(var(--background-gradient-end)) 100%),
+      radial-gradient(circle at 30% 20%, rgba(var(--color-primary-200), 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 70% 80%, rgba(var(--color-accent-secondary), 0.06) 0%, transparent 40%);
+  }
+
+  /* Heading styles for better readability in light mode */
+  h1, h2, h3, h4, h5, h6 {
+    color: rgb(var(--color-secondary-900)) !important; /* High contrast dark text in light mode */
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+  }
+
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode h4,
+  .dark-mode h5,
+  .dark-mode h6 {
+    color: rgb(var(--color-secondary-50)) !important; /* Light text in dark mode */
+  }
+
+  /* Additional override for h2 specifically */
+  h2 {
+    color: rgb(var(--color-secondary-900)) !important;
+    font-weight: 700 !important;
+  }
+
+  .dark-mode h2 {
+    color: rgb(var(--color-secondary-50)) !important;
+  }
+
+  /* Override for p tags to make them black in light mode */
+  p {
+    color: rgb(var(--color-secondary-900)) !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+  }
+
+  .dark-mode p {
+    color: rgb(var(--color-secondary-300)) !important;
   }
 }
 
@@ -246,15 +281,15 @@
 @layer components {
   .glass-card {
     background: rgba(var(--glass-bg-color), var(--glass-bg-opacity));
-    backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(120%);
     border: 1px solid rgba(var(--glass-border-color), var(--glass-border-opacity));
     box-shadow:
-      0 8px 32px rgba(var(--glass-shadow-color), var(--glass-shadow-opacity)),
-      0 0 0 1px rgba(var(--glass-border-color), 0.1),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      0 4px 24px rgba(var(--glass-shadow-color), var(--glass-shadow-opacity)),
+      0 0 0 1px rgba(var(--glass-border-color), 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    color: rgb(var(--glass-text-color));
+    color: rgb(var(--glass-text-color)); /* High contrast text */
     position: relative;
     overflow: hidden;
   }
@@ -279,14 +314,14 @@
 
   .glass-button {
     background: rgba(var(--glass-bg-color), var(--glass-bg-opacity));
-    backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(12px) saturate(110%);
     border: 1px solid rgba(var(--glass-border-color), var(--glass-border-opacity));
     box-shadow:
-      0 4px 16px rgba(var(--glass-shadow-color), var(--glass-shadow-opacity)),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      0 2px 12px rgba(var(--glass-shadow-color), var(--glass-shadow-opacity)),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
     border-radius: 12px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    color: rgb(var(--glass-text-color));
+    color: rgb(var(--glass-text-color)); /* High contrast text */
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -317,14 +352,14 @@
 
   .glass-input {
     background: rgba(var(--glass-bg-color), var(--glass-bg-opacity));
-    backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(12px) saturate(110%);
     border: 1px solid rgba(var(--glass-border-color), var(--glass-border-opacity));
     box-shadow:
-      0 4px 16px rgba(var(--glass-shadow-color), var(--glass-shadow-opacity)),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      0 2px 12px rgba(var(--glass-shadow-color), var(--glass-shadow-opacity)),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
     border-radius: 12px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    color: rgb(var(--glass-text-color));
+    color: rgb(var(--glass-text-color)); /* High contrast text */
     position: relative;
   }
 
@@ -347,9 +382,9 @@
     border-radius: 12px;
     font-weight: 500;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    color: rgb(var(--glass-text-color));
+    color: rgb(var(--glass-text-color)); /* High contrast text */
     background: rgba(var(--glass-bg-color), var(--glass-bg-opacity));
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(var(--glass-border-color), var(--glass-border-opacity));
     position: relative;
     overflow: hidden;
@@ -466,10 +501,9 @@ html {
   right: 0;
   bottom: 0;
   background-image:
-    radial-gradient(circle at 20% 80%, rgba(var(--color-primary-100), 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(var(--color-accent-purple), 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(var(--color-accent-cyan), 0.1) 0%, transparent 50%);
-  animation: gradient-shift 20s ease infinite;
+    radial-gradient(circle at 25% 75%, rgba(var(--color-primary-200), 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 75% 25%, rgba(var(--color-accent-secondary), 0.08) 0%, transparent 45%);
+  animation: gradient-shift 25s ease infinite;
   pointer-events: none;
 }
 
@@ -548,16 +582,18 @@ html {
 
 .particle {
   position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(var(--color-primary-400), 0.6);
+  width: 3px;
+  height: 3px;
+  background: rgba(var(--color-primary-600), 0.4);
   border-radius: 50%;
-  animation: particle-float 6s ease-in-out infinite;
+  animation: particle-float 8s ease-in-out infinite;
   pointer-events: none;
 }
 
 .dark-mode .particle {
-  background: rgba(var(--color-accent-purple), 0.6);
+  background: rgba(var(--color-accent-purple), 0.5);
+  width: 4px;
+  height: 4px;
 }
 
 .particle:nth-child(1) { animation-delay: 0s; left: 10%; }

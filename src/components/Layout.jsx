@@ -28,12 +28,12 @@ const Layout = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2 animate-fade-in-scale animate-stagger-1">
               <div className="flex items-center space-x-2 mb-4">
-                <FaPaw className="text-2xl text-blue-500 animate-float" />
-                <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                <FaPaw className="text-2xl text-blue-600 animate-float" />
+                <span className="text-xl font-bold text-gray-800 dark:text-white">
                   Premium Dog Food
                 </span>
               </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4 max-w-md leading-relaxed">
+              <p className="mb-4 max-w-md leading-relaxed">
                 Nourishing your furry friend with the finest ingredients for a healthy,
                 happy life. Premium quality dog food made with love and science.
               </p>
@@ -51,10 +51,10 @@ const Layout = () => {
             </div>
 
             <div className="animate-fade-in-up animate-stagger-2">
-              <h3 className="text-lg font-semibold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">
                 Quick Links
               </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <ul className="space-y-2">
                 <li><a href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:translate-x-1 inline-block">Home</a></li>
                 <li><a href="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:translate-x-1 inline-block">About Us</a></li>
                 <li><a href="/products" className="hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:translate-x-1 inline-block">Products</a></li>
@@ -64,10 +64,10 @@ const Layout = () => {
             </div>
 
             <div className="animate-fade-in-up animate-stagger-3">
-              <h3 className="text-lg font-semibold mb-4 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">
+              <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">
                 Contact Info
               </h3>
-              <div className="space-y-3 text-gray-600 dark:text-gray-300">
+              <div className="space-y-3">
                 <p className="flex items-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
                   <FaPhone className="inline mr-3 text-blue-500 animate-pulse" />+1 (555) 123-4567
                 </p>
@@ -82,7 +82,7 @@ const Layout = () => {
             </div>
           </div>
 
-    <div className="border-t border-white/10 dark:border-black/10 mt-8 pt-8 text-center text-gray-600 dark:text-gray-300">
+    <div className="border-t border-white/10 dark:border-black/10 mt-8 pt-8 text-center">
       <p>&copy; 2024 Premium Dog Food. All rights reserved. Made with ❤️ for dogs everywhere.</p>
     </div>
   </div>

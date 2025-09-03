@@ -9,7 +9,7 @@ const About = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
             About Our Company
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto">
             We're passionate about providing the highest quality nutrition for your beloved pets,
             combining decades of expertise with cutting-edge research.
           </p>
@@ -19,31 +19,31 @@ const About = () => {
         <section className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="glass-card p-8 rounded-2xl">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Our Story</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+              <p className="mb-4">
                 Founded in 2010, our company began with a simple mission: to create dog food
                 that dogs actually love while providing the nutrition they need to thrive.
               </p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="mb-4">
                 What started as a small family business has grown into a trusted brand that
                 serves thousands of happy dogs and their owners across the country.
               </p>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p>
                 Every decision we make is guided by our commitment to quality, safety, and
                 the well-being of your furry family members.
               </p>
             </div>
             <div className="glass-card p-8 rounded-2xl">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Our Mission</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+              <p className="mb-4">
                 To provide premium, nutritious dog food that supports the health and happiness
                 of dogs everywhere, while building lasting relationships with pet owners.
               </p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="mb-4">
                 We believe that every dog deserves the best nutrition possible, and we're
                 committed to delivering products that exceed expectations.
               </p>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p>
                 Through innovation, quality ingredients, and expert formulation, we strive
                 to be the trusted choice for pet nutrition.
               </p>
@@ -53,7 +53,7 @@ const About = () => {
 
         {/* Values Section */}
         <section className="mb-20">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+          <h2 className="text-4xl font-bold text-center mb-12">
             Our Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -42,7 +42,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <section>
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
+            <h2 className="text-3xl font-bold mb-8">
               Get In Touch
             </h2>
 
